@@ -1,5 +1,29 @@
-# HoneyPot-IntelLive-
+Active In-the-Wild Exploitation Intelligence
 
-Active In-the-Wild Exploitation (PHP2Shell, Botnet, Docker API)
+Live Honeypot Telemetry Gathered by SecurityCyberuk
 
-⚠️ DISCLAIMER: The information provided above is for threat intelligence, defensive monitoring, and blocklisting purposes only. Do not navigate to, ping, or interact with any of the IP addresses or URLs listed. Interacting with threat actor infrastructure can expose your location, confirm vulnerabilities, and invite direct retaliatory targeting. All network indicators have been defanged to prevent accidental execution.
+This repository contains raw, categorized Indicators of Compromise (IOCs) captured via active honeypot engagement between October 21 and October 23, 2026.
+
+Our infrastructure is specifically tuned to capture high-fidelity, actionable threat intelligence rather than general background noise. The data contained in this repository highlights aggressive, automated exploitation of the recently leaked PHP vulnerabilities (CVE-2026-109618 and CVE-2026-109619), alongside confirmed Plex code execution, Docker API abuse, credential harvesting, and persistent IoT botnet payload delivery (Mirai/Mozi variants).
+
+We believe in a defense-first approach. By publishing this telemetry, we aim to provide blue teams and network defenders with verifiable, active threat data to update firewalls, SIEMs, and blocklists.
+
+👉 View the Categorized IOCs Here
+
+⚠️ DISCLAIMER & RULES OF ENGAGEMENT
+
+The information provided in this repository is strictly for threat intelligence, defensive monitoring, and blocklisting purposes only.
+
+DO NOT navigate to, ping, scan, or interact with any of the IP addresses, URLs, or hashes listed in the IOC files.
+
+Interacting with threat actor infrastructure can expose your organization's location.
+
+It can confirm your vulnerabilities to the attackers.
+
+It invites direct, retaliatory targeting against your infrastructure.
+
+All network indicators have been defanged (e.g., hxxp, [.]) to prevent accidental execution. Internal infrastructure addresses have been [REDACTED] to preserve operational security.
+
+Use this data to defend your networks, not to "hack back."
+
+CTI at securitycyber.uk/cti
