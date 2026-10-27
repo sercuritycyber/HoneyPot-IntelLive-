@@ -1,0 +1,96 @@
+ts,agent,rule_id,level,srcip,description
+2026-10-21T16:45:46.546+0000,hp-php,100161,10,223.123.43.133,PHP honeypot: exploit attempt from 223.123.43.133
+2026-10-21T23:33:10.422+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:10.463+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:10.463+0000,hp-php,100166,13,176.65.139.151,PHP2Shell (CVE-2026-109619): upload-progress request from 176.65.139.151
+2026-10-21T23:33:10.463+0000,hp-php,100166,13,176.65.139.151,PHP2Shell (CVE-2026-109619): upload-progress request from 176.65.139.151
+2026-10-21T23:33:12.422+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:12.422+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:14.423+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:16.423+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:18.423+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:18.464+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:18.464+0000,hp-php,100170,15,176.65.139.151,PHP2Shell CHAIN (CVE-2026-109619): fatal/OOM then upload-progress request from 176.65.139.151
+2026-10-21T23:33:18.464+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:20.426+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:22.424+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:22.424+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:22.426+0000,hp-php,100170,15,176.65.139.151,PHP2Shell CHAIN (CVE-2026-109619): fatal/OOM then upload-progress request from 176.65.139.151
+2026-10-21T23:33:24.426+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:26.424+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:28.426+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:30.425+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:30.425+0000,hp-php,100170,15,176.65.139.151,PHP2Shell CHAIN (CVE-2026-109619): fatal/OOM then upload-progress request from 176.65.139.151
+2026-10-21T23:33:30.426+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:32.425+0000,hp-php,100170,15,176.65.139.151,PHP2Shell CHAIN (CVE-2026-109619): fatal/OOM then upload-progress request from 176.65.139.151
+2026-10-21T23:33:32.425+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:32.426+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:32.429+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:34.427+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:36.425+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:36.425+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:36.432+0000,hp-php,100170,15,176.65.139.151,PHP2Shell CHAIN (CVE-2026-109619): fatal/OOM then upload-progress request from 176.65.139.151
+2026-10-21T23:33:38.425+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:38.466+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:40.427+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:40.430+0000,hp-php,100170,15,176.65.139.151,PHP2Shell CHAIN (CVE-2026-109619): fatal/OOM then upload-progress request from 176.65.139.151
+2026-10-21T23:33:42.426+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:42.426+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:42.429+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:42.430+0000,hp-php,100170,15,176.65.139.151,PHP2Shell CHAIN (CVE-2026-109619): fatal/OOM then upload-progress request from 176.65.139.151
+2026-10-21T23:33:44.428+0000,hp-php,100165,12,176.65.139.151,PHP honeypot: memory-corruption exploitation signal (PHP2Shell)
+2026-10-21T23:33:46.426+0000,hp-php,100170,15,176.65.139.151,PHP2Shell CHAIN (CVE-2026-109619): fatal/OOM then upload-progress request from 176.65.139.151
+2026-10-21T23:33:46.426+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-21T23:33:46.428+0000,hp-php,100169,12,176.65.139.151,"PHP2Shell (CVE-2026-109618): chunked multipart, no Content-Length, from 176.65.139.151"
+2026-10-22T00:43:38.807+0000,hp-php,100173,12,102.220.161.104,Decoy credential file /.env downloaded by 102.220.161.104
+2026-10-22T08:16:06.956+0000,hp-php,100188,13,182.190.219.31,Dropper URL captured via existing_webshell_check from 182.190.219.31: http://192.168.1.1:8088/Mozi.m
+2026-10-22T08:16:06.958+0000,hp-php,100161,10,182.190.219.31,PHP honeypot: exploit attempt from 182.190.219.31
+2026-10-22T16:21:23.659+0000,hp-php,100161,10,120.85.119.223,PHP honeypot: exploit attempt from 120.85.119.223
+2026-10-22T23:20:16.188+0000,hp-php,100173,12,102.220.163.122,Decoy credential file /.env downloaded by 102.220.163.122
+2026-10-22T23:20:26.021+0000,hp-php,100173,12,102.220.163.122,Decoy credential file /.env downloaded by 102.220.163.122
+2026-10-22T23:20:28.228+0000,hp-php,100161,10,102.220.163.122,PHP honeypot: exploit attempt from 102.220.163.122
+2026-10-23T03:03:33.135+0000,hp-php,100166,13,45.156.128.43,PHP2Shell (CVE-2026-109619): upload-progress request from 45.156.128.43
+2026-10-23T05:11:33.849+0000,hp-php,100166,13,109.105.210.102,PHP2Shell (CVE-2026-109619): upload-progress request from 109.105.210.102
+2026-10-23T06:07:56.196+0000,hp-php,100166,13,109.105.210.102,PHP2Shell (CVE-2026-109619): upload-progress request from 109.105.210.102
+2026-10-23T09:01:33.044+0000,hp-php,100188,13,103.149.32.99,Dropper URL captured via existing_webshell_check from 103.149.32.99: http://172.14.7.93:59883/Mozi.m
+2026-10-23T09:01:33.046+0000,hp-php,100161,10,103.149.32.99,PHP honeypot: exploit attempt from 103.149.32.99
+2026-10-23T09:22:43.151+0000,hp-php,100166,13,45.156.128.41,PHP2Shell (CVE-2026-109619): upload-progress request from 45.156.128.41
+2026-10-23T10:02:33.376+0000,hp-php,100161,10,103.31.100.4,PHP honeypot: exploit attempt from 103.31.100.4
+2026-10-23T12:02:52.104+0000,hp-php,100166,13,45.156.128.43,PHP2Shell (CVE-2026-109619): upload-progress request from 45.156.128.43
+2026-10-23T13:02:10.433+0000,hp-php,100166,13,45.156.129.57,PHP2Shell (CVE-2026-109619): upload-progress request from 45.156.129.57
+2026-10-23T13:43:00.653+0000,hp-php,100166,13,36.255.97.14,PHP2Shell (CVE-2026-109619): upload-progress request from 36.255.97.14
+2026-10-23T13:43:30.656+0000,hp-php,100167,10,36.255.97.14,PHP2Shell pattern: stalled multipart upload from 36.255.97.14
+2026-10-23T13:43:30.697+0000,hp-php,100172,10,36.255.97.14,PHP2Shell (CVE-2026-109618) pattern: oversized multipart (1MB+) from 36.255.97.14
+2026-10-23T13:43:32.657+0000,hp-php,100166,13,36.255.97.14,PHP2Shell (CVE-2026-109619): upload-progress request from 36.255.97.14
+2026-10-23T13:43:34.657+0000,hp-php,100166,13,36.255.97.14,PHP2Shell (CVE-2026-109619): upload-progress request from 36.255.97.14
+2026-10-23T13:43:34.657+0000,hp-php,100167,10,36.255.97.14,PHP2Shell pattern: stalled multipart upload from 36.255.97.14
+2026-10-23T13:43:34.659+0000,hp-php,100172,10,36.255.97.14,PHP2Shell (CVE-2026-109618) pattern: oversized multipart (1MB+) from 36.255.97.14
+2026-10-23T13:45:10.665+0000,hp-php,100172,10,36.255.97.14,PHP2Shell (CVE-2026-109618) pattern: oversized multipart (1MB+) from 36.255.97.14
+2026-10-23T13:45:10.665+0000,hp-php,100167,10,36.255.97.14,PHP2Shell pattern: stalled multipart upload from 36.255.97.14
+2026-10-23T13:47:36.674+0000,hp-php,100172,10,36.255.97.14,PHP2Shell (CVE-2026-109618) pattern: oversized multipart (1MB+) from 36.255.97.14
+2026-10-23T13:47:36.715+0000,hp-php,100167,10,36.255.97.14,PHP2Shell pattern: stalled multipart upload from 36.255.97.14
+2026-10-23T19:23:50.611+0000,hp-php,100166,13,45.156.128.47,PHP2Shell (CVE-2026-109619): upload-progress request from 45.156.128.47
+2026-10-23T20:52:19.035+0000,hp-php,100172,10,89.238.150.166,PHP2Shell (CVE-2026-109618) pattern: oversized multipart (1MB+) from 89.238.150.166
+2026-10-23T20:52:19.035+0000,hp-php,100167,10,89.238.150.166,PHP2Shell pattern: stalled multipart upload from 89.238.150.166
+2026-10-23T20:52:21.076+0000,hp-php,100166,13,89.238.150.166,PHP2Shell (CVE-2026-109619): upload-progress request from 89.238.150.166
+2026-10-23T20:52:31.036+0000,hp-php,100167,10,89.238.150.166,PHP2Shell pattern: stalled multipart upload from 89.238.150.166
+2026-10-23T20:52:31.038+0000,hp-php,100172,10,89.238.150.166,PHP2Shell (CVE-2026-109618) pattern: oversized multipart (1MB+) from 89.238.150.166
+2026-10-23T20:52:31.045+0000,hp-php,100166,13,89.238.150.166,PHP2Shell (CVE-2026-109619): upload-progress request from 89.238.150.166
+2026-10-23T20:52:41.042+0000,hp-php,100172,10,89.238.150.166,PHP2Shell (CVE-2026-109618) pattern: oversized multipart (1MB+) from 89.238.150.166
+2026-10-23T20:52:41.083+0000,hp-php,100167,10,89.238.150.166,PHP2Shell pattern: stalled multipart upload from 89.238.150.166
+2026-10-23T20:53:51.048+0000,hp-php,100172,10,89.238.150.166,PHP2Shell (CVE-2026-109618) pattern: oversized multipart (1MB+) from 89.238.150.166
+2026-10-23T20:53:51.050+0000,hp-php,100167,10,89.238.150.166,PHP2Shell pattern: stalled multipart upload from 89.238.150.166
+2026-10-23T20:53:53.055+0000,hp-php,100166,13,89.238.150.166,PHP2Shell (CVE-2026-109619): upload-progress request from 89.238.150.166
+2026-10-23T20:53:59.049+0000,hp-php,100172,10,89.238.150.166,PHP2Shell (CVE-2026-109618) pattern: oversized multipart (1MB+) from 89.238.150.166
+2026-10-23T20:53:59.049+0000,hp-php,100167,10,89.238.150.166,PHP2Shell pattern: stalled multipart upload from 89.238.150.166
+2026-10-23T21:03:35.145+0000,hp-php,100166,13,89.238.150.166,PHP2Shell (CVE-2026-109619): upload-progress request from 89.238.150.166
+2026-10-23T21:17:03.172+0000,hp-php,100166,13,45.156.128.47,PHP2Shell (CVE-2026-109619): upload-progress request from 45.156.128.47
+2026-10-23T21:50:23.400+0000,hp-php,100166,13,45.156.128.47,PHP2Shell (CVE-2026-109619): upload-progress request from 45.156.128.47
+2026-10-23T22:02:43.437+0000,hp-php,100161,10,89.247.33.110,PHP honeypot: exploit attempt from 89.247.33.110
+2026-10-23T22:02:45.437+0000,hp-php,100161,10,89.247.33.110,PHP honeypot: exploit attempt from 89.247.33.110
+2026-10-23T22:02:49.438+0000,hp-php,100193,10,89.247.33.110,PHP honeypot: exploit payload in POST body from 89.247.33.110
+2026-10-23T22:02:49.440+0000,hp-php,100161,10,89.247.33.110,PHP honeypot: exploit attempt from 89.247.33.110
+2026-10-24T09:23:57.212+0000,hp-php,100161,10,221.159.119.6,PHP honeypot: exploit attempt from 221.159.119.6
+2026-10-24T09:23:57.214+0000,hp-php,100161,10,221.159.119.6,PHP honeypot: exploit attempt from 221.159.119.6
+2026-10-24T14:05:20.853+0000,hp-php,100161,10,115.190.211.111,PHP honeypot: exploit attempt from 115.190.211.111
+2026-10-24T16:12:07.557+0000,hp-php,100161,10,124.29.239.108,PHP honeypot: exploit attempt from 124.29.239.108
