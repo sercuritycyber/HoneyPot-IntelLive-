@@ -6,8 +6,7 @@ Vendor-agnostic signatures for CVE-2026-109618 / CVE-2026-109619. These detect t
 ## Log heuristics (web server / PHP)
 
 - **Crash-then-re-request loop:** a PHP worker fatal/segfault/OOM followed within seconds by
-  a further request from the **same source IP** — repeated. This is the heap-groom-and-retry
-  signature and is the single highest-fidelity signal.
+  a further request from the **same source IP** — repeated. This pattern can support investigation but also occurs for other causes; it does not prove heap grooming or exploitation.
 - **Upload-progress abuse:** bursts of requests carrying `PHP_SESSION_UPLOAD_PROGRESS` with a
   `PHPSESSID` cookie, especially interleaved with worker crashes.
 - **Chunked multipart, no Content-Length:** `Transfer-Encoding: chunked`
@@ -26,8 +25,7 @@ Rate-correlate per source IP with 5xx/worker-crash responses.
 ## Endpoint / EDR
 
 A web-server worker process (`apache2`/`httpd`/`php-fpm`/`php`) spawning a shell
-(`/bin/sh`, `/bin/bash`) is the terminal RCE stage — alert at high severity. On our sensor
-this **never fired**, which is how we concluded no code execution occurred.
+(`/bin/sh`, `/bin/bash`) is a high-priority process-start signal. Correlate the parent process, request, operator activity and outcome before concluding an attacker achieved RCE. The sensor did record process-start alerts on 21 October; none has been linked to the external burst described in FINDINGS.md.
 
 ## Hardening that breaks the chain
 

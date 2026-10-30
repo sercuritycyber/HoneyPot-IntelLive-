@@ -2,6 +2,8 @@
 
 **SecurityCyber honeynet · captured 21–23 October 2026 · published as defensive intel.**
 
+> **Evidence correction, 30 October 2026:** Wazuh recorded five PHP process-start alerts on 21 October, including two clusters that coincided with administrative SSH. Their origin has not been independently established. None was correlated with the external PHP requests described below. A process-start alert is not proof of an externally triggered compromise. The earlier statement that no execution-stage alert fired was incorrect. See [the supplemental investigation](../investigations/2026-10-30-php-payloads.md).
+
 ## TL;DR
 
 Our internet-facing PHP honeypot logged in-the-wild PHP2Shell exploitation **attempts**
@@ -14,7 +16,7 @@ as such.
 
 ## What we observed
 
-- **21 Oct, 23:33 UTC — `176.65.139.151`** ran the complete technique in a ~38-second
+- **21 Oct, 23:33 UTC — `176.65.139.151`** sent requests consistent with several parts of an attempted technique in a ~38-second
   burst: PHP session upload-progress abuse (CVE-2026-109619), chunked `multipart/form-data`
   with no `Content-Length` (CVE-2026-109618), repeated worker fatal/OOM crashes, and the
   correlated **crash-then-re-request loop** that is the fingerprint of heap grooming. It is
@@ -27,16 +29,14 @@ as such.
 
 ## What we did NOT observe
 
-No code execution. No spawned shell, no process execution, no post-exploitation command,
-no dropper fetched by the PHP process, and no attacker returning. The 21 Oct burst simply
+No attacker-triggered code execution or PHP-process dropper fetch was confirmed for the described burst. A shell and other process starts were recorded earlier on 21 October, but their origin remains unconfirmed and has not been linked to this burst. The 21 Oct burst simply
 **stopped after ~38 seconds of crash-looping**. Our sensor's entire alert history for this
 event tops out at exploitation-*delivery* and crash signals (MITRE **T1190 Initial Access**)
-— nothing in the Execution stage ever fired.
+— there is no execution-stage alert correlated to the burst in the reviewed records.
 
 ## Assessment (held loosely)
 
-Our sensor runs **PHP 8.4.26** — the same version named in the one public report of
-successful RCE (24 Oct) — and it did not fall. That public success landed only against a
+A later inspection observed **PHP 8.4.26** on a replacement instance. The available evidence does not establish that the October 21–23 captures came from that replacement instance, or conclusively determine the earlier sensor version. That public success landed only against a
 deliberately favourable **single-worker `mod_php`** profile and was explicit that it does
 not measure reliability elsewhere. Taken together, the honest read is that **reliable
 exploitation in the wild is currently configuration-dependent, not universal.** That is not

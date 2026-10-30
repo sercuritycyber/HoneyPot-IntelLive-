@@ -1,0 +1,6 @@
+indicator,type,role,first_seen_utc,evidence,confidence,limitations
+89.247.33[.]110,ipv4,request_source,2026-10-23T22:02:48Z,PHP-CGI-style request with encoded downloader,observed,Request delivery only; no confirmed execution
+217.60.102[.]5,ipv4,payload_destination,2026-10-23T22:02:48Z,Destination decoded from request body,captured,Retrieval and ownership unverified
+176.65.139[.]151,ipv4,request_source_and_payload_destination,2026-10-21T23:33:09Z,Upload-progress field contained downloader instructions,observed,Execution and whether source was authorized testing unverified
+hxxp://176.65.139[.]151/bot-x86_64,url,payload_destination,2026-10-21T23:33:09Z,URL extracted from upload-progress field,captured,File retrieval unverified
+9b7215fd7907a07b7b6601370623a5bcda2ae6f5f896cbfc1ddf5e3e3096dc49,sha256,http_request_body,2026-10-23T22:02:48Z,Hash recorded in PHP request log,observed,Not a downloaded malware file hash
